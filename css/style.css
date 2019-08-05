@@ -45,7 +45,7 @@ main {
 
 .key {
   border-radius: 75px;
-  transition: 1s;
+  transition: 1.3s;
 }
 
 .keydown {
