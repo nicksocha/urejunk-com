@@ -1,0 +1,69 @@
+body {
+  background: var(--black);
+  color: var(--white);
+  display: grid;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Nosifer", cursive;
+  font-size: 3em;
+  text-shadow: 0px 3px 6px var(--green);
+}
+
+h2 {
+  font-family: "Lacquer", sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+html {
+  --black: #000;
+  --green: #39ff14;
+  --white: #fff;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  height: 100%;
+  user-select: none;
+}
+
+img {
+  margin-bottom: 25px;
+  max-height: 250px;
+}
+
+main {
+  display: grid;
+  justify-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.key {
+  border-radius: 75px;
+  transition: 1s;
+}
+
+.keydown {
+  border: 2px solid #39ff14;
+  box-shadow: 0px 3px 20px var(--white);
+  transform: scale(1.1);
+}
+
+/* startCursor */
+.txt-rotate > .wrap {
+  animation: caret 800ms steps(1) infinite;
+  border-right: 0.09em solid var(--white);
+  padding-right: 2px;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+/* endCursor */
